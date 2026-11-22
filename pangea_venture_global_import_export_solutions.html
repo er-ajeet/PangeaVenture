@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pangea Venture | Uniting Global Supply Chains Across Continents</title>
+    <meta name="description" content="Pangea Venture (pangeaventure.com) - Executive international import-export sourcing, EXIM compliance, and multimodal freight logistics across 45+ partner nations.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#060F1E',
+                            900: '#0A192F',
+                            800: '#112240',
+                            700: '#1D3557',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        },
+                        ocean: {
+                            500: '#14B8A6',
+                            600: '#0D9488',
+                            700: '#0F766E',
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom subtle animations and scrollbars */
+        .bg-grid-dots {
+            background-size: 28px 28px;
+        }
+        @keyframes dashFlow {
+            to {
+                stroke-dashoffset: -40;
+            }
+        }
+        .animate-route {
+            stroke-dasharray: 6 6;
+            animation: dashFlow 2.5s linear infinite;
+        }
+        .glass-card {
+            background: rgba(17, 34, 64, 0.78);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .tab-active {
+            background-color: #0A192F;
+            color: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(10, 25, 47, 0.18);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-navy-950 overflow-x-hidden">
+
+    <!-- Top Corporate Announcement Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-gold-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-ocean-500 animate-pulse"></span>
+                    Global Trade Desk Active
+                </span>
+                <span class="hidden md:inline text-slate-500">|</span>
+                <span class="hidden md:inline">DGFT Registered • ISO 9001:2015 & AEO Compliant EXIM Partner</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:info@pangeaventure.com" class="hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-gold-500"></i>
+                    info@pangeaventure.com
+                </a>
+                <span class="text-slate-600">|</span>
+                <span class="font-mono text-slate-400">pangeaventure.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. STICKY NAVIGATION BAR -->
+    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-11 h-11 rounded-xl bg-navy-900 flex items-center justify-center shadow-md group-hover:bg-navy-800 transition relative overflow-hidden">
+                        <!-- Custom SVG Pangea Supercontinent & Meridian Emblem -->
+                        <svg class="w-7 h-7" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="14" stroke="#F59E0B" stroke-width="1.75" stroke-opacity="0.9"/>
+                            <ellipse cx="18" cy="18" rx="6.5" ry="14" stroke="#14B8A6" stroke-width="1.4" stroke-opacity="0.85"/>
+                            <path d="M4.5 18H31.5" stroke="#14B8A6" stroke-width="1.4" stroke-opacity="0.7"/>
+                            <!-- Unified Pangea Landmass Silhouette -->
+                            <path d="M12.5 10.5C15 9.2 19.8 9.6 22.4 11.8C24.5 13.6 24.8 16.5 22.8 18.4C21.2 19.9 22.5 22.6 20.2 24.5C18.1 26.2 14.5 25.5 13.1 23.2C11.8 21.1 13.4 19.2 11.6 17.2C9.8 15.2 10.2 11.7 12.5 10.5Z" fill="#F59E0B" fill-opacity="0.92"/>
+                            <circle cx="25.5" cy="11.5" r="2" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                            <span class="font-display font-extrabold text-xl tracking-tight text-navy-900">PANGEA <span class="text-gold-600">VENTURE</span></span>
+                        </div>
+                        <span class="text-[11px] font-medium tracking-wider uppercase text-slate-500">pangeaventure.com</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-navy-900 transition">Services</a>
+                    <a href="#corridors" class="text-sm font-semibold text-slate-600 hover:text-navy-900 transition">Trade Corridors</a>
+                    <a href="#industries" class="text-sm font-semibold text-slate-600 hover:text-navy-900 transition">Industries</a>
+                    <a href="#process" class="text-sm font-semibold text-slate-600 hover:text-navy-900 transition">Process</a>
+                    <a href="#quote" class="text-sm font-semibold text-slate-600 hover:text-navy-900 transition">Contact</a>
+                </nav>
+
+                <!-- Action CTA & Mobile Hamburger -->
+                <div class="flex items-center gap-3">
+                    <a href="#quote" class="hidden sm:inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition-all">
+                        <span>Request a Quote</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-gold-400"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-xl">
+            <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Services</a>
+            <a href="#corridors" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Trade Corridors</a>
+            <a href="#industries" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Industries</a>
+            <a href="#process" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Process</a>
+            <a href="#quote" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Contact</a>
+            <div class="pt-2">
+                <a href="#quote" class="mobile-link flex items-center justify-center gap-2 w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold py-3.5 rounded-xl shadow">
+                    <span>Request a Freight & Sourcing Quote</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION WITH INTERACTIVE GLOBAL TRADE CORRIDOR WIDGET -->
+    <section id="corridors" class="relative bg-navy-900 bg-grid-pattern bg-grid-dots text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <!-- Ambient Radial Glows -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-ocean-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-[34rem] h-[34rem] bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                
+                <!-- Left Column: Brand Value Proposition -->
+                <div class="lg:col-span-7 space-y-7">
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-gold-400">
+                        <i data-lucide="globe-2" class="w-4 h-4 text-ocean-500"></i>
+                        <span>Bridging Continents Through Seamless Trade</span>
+                    </div>
+
+                    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.12] tracking-tight text-white">
+                        Uniting Global Supply Chains <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-ocean-400">Across Continents.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                        Inspired by the unified supercontinent, <strong class="text-white font-semibold">Pangea Venture</strong> eliminates cross-border friction. We deliver end-to-end international sourcing, rigorous customs compliance, and multimodal freight logistics tailored for ambitious enterprises.
+                    </p>
+
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#quote" class="inline-flex items-center justify-center gap-2.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold text-base px-7 py-4 rounded-xl shadow-lg shadow-gold-500/20 transition-all transform hover:-translate-y-0.5">
+                            <span>Get Freight & Sourcing Quote</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-base px-7 py-4 rounded-xl transition-all">
+                            <span>Explore Trade Solutions</span>
+                            <i data-lucide="compass" class="w-5 h-5 text-ocean-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Key Trust Metrics Bar -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/15">
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-white">45+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-0.5">Partner Countries</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-gold-400">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-0.5">Customs Compliance</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-ocean-400">24/7</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-0.5">Cargo Visibility</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-white">ISO & DGFT</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-0.5">Certified Trade Desk</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Global Trade Corridor Preview Widget -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-7 shadow-2xl relative">
+                        <!-- Top Card Header -->
+                        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-ocean-400">Live Corridor Planner</span>
+                                <h2 class="font-display font-bold text-lg text-white mt-0.5">Global Trade Route Estimator</h2>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-lg bg-gold-500/20 text-gold-400 text-xs font-mono font-semibold">
+                                EXIM-SIM
+                            </span>
+                        </div>
+
+                        <!-- Interactive SVG Route Map Graphic -->
+                        <div class="my-5 bg-navy-950/70 rounded-xl p-4 border border-white/10 relative overflow-hidden">
+                            <svg class="w-full h-28" viewBox="0 0 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Subtle latitude/longitude grid lines -->
+                                <line x1="0" y1="25" x2="360" y2="25" stroke="rgba(255,255,255,0.06)" />
+                                <line x1="0" y1="50" x2="360" y2="50" stroke="rgba(255,255,255,0.06)" />
+                                <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(255,255,255,0.06)" />
+                                <line x1="90" y1="0" x2="90" y2="100" stroke="rgba(255,255,255,0.06)" />
+                                <line x1="180" y1="0" x2="180" y2="100" stroke="rgba(255,255,255,0.06)" />
+                                <line x1="270" y1="0" x2="270" y2="100" stroke="rgba(255,255,255,0.06)" />
+
+                                <!-- Animated Trade Arc -->
+                                <path id="corridor-arc" d="M 55 68 Q 180 8 305 62" stroke="#F59E0B" stroke-width="2.5" fill="none" class="animate-route"/>
+                                <path d="M 55 68 Q 180 35 305 62" stroke="#14B8A6" stroke-width="1.2" stroke-opacity="0.45" fill="none"/>
+
+                                <!-- Origin Node -->
+                                <circle cx="55" cy="68" r="10" fill="#14B8A6" fill-opacity="0.25"/>
+                                <circle cx="55" cy="68" r="5" fill="#14B8A6"/>
+                                <text id="svg-origin-label" x="55" y="90" fill="#CBD5E1" font-size="10" font-family="Inter, sans-serif" font-weight="600" text-anchor="middle">SOUTH ASIA</text>
+
+                                <!-- Midpoint Transit Icon -->
+                                <rect x="155" y="16" width="50" height="18" rx="9" fill="#0A192F" stroke="#F59E0B" stroke-width="1"/>
+                                <text id="svg-transit-days" x="180" y="28" fill="#FBBF24" font-size="9" font-family="monospace" font-weight="700" text-anchor="middle">14–18 DAYS</text>
+
+                                <!-- Destination Node -->
+                                <circle cx="305" cy="62" r="10" fill="#F59E0B" fill-opacity="0.25"/>
+                                <circle cx="305" cy="62" r="5" fill="#F59E0B"/>
+                                <text id="svg-dest-label" x="305" y="85" fill="#CBD5E1" font-size="10" font-family="Inter, sans-serif" font-weight="600" text-anchor="middle">EUROPE (EU)</text>
+                            </svg>
+                        </div>
+
+                        <!-- Origin & Destination Selectors -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            <div>
+                                <label for="corridor-origin" class="block text-xs font-medium text-slate-300 mb-1.5">Origin Region</label>
+                                <select id="corridor-origin" class="w-full bg-navy-950 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                                    <option value="India / South Asia" selected>India / South Asia</option>
+                                    <option value="Middle East (GCC)">Middle East (GCC)</option>
+                                    <option value="Southeast Asia">Southeast Asia</option>
+                                    <option value="Europe (EU & UK)">Europe (EU & UK)</option>
+                                    <option value="North America">North America</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="corridor-dest" class="block text-xs font-medium text-slate-300 mb-1.5">Destination Region</label>
+                                <select id="corridor-dest" class="w-full bg-navy-950 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500 transition">
+                                    <option value="Europe (EU & UK)" selected>Europe (EU & UK)</option>
+                                    <option value="North America">North America</option>
+                                    <option value="Middle East (GCC)">Middle East (GCC)</option>
+                                    <option value="Southeast Asia">Southeast Asia</option>
+                                    <option value="India / South Asia">India / South Asia</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Corridor Intelligence Output -->
+                        <div class="mt-4 bg-white/5 rounded-xl p-4 border border-white/10 space-y-2.5 text-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">Primary Transit Modes:</span>
+                                <span id="corridor-modes" class="font-semibold text-white">Sea FCL/LCL • Express Air</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">Est. Ocean / Air Transit:</span>
+                                <span id="corridor-time" class="font-semibold text-gold-400">16–22 Days Sea / 3 Days Air</span>
+                            </div>
+                            <div class="pt-2 border-t border-white/10">
+                                <span class="text-xs text-slate-400 block mb-1">High-Volume Commodities on Corridor:</span>
+                                <p id="corridor-commodities" class="text-xs text-slate-200 font-medium leading-relaxed">
+                                    Organic Spices, Technical Textiles, Engineering Components, Specialty Chemicals
+                                </p>
+                            </div>
+                        </div>
+
+                        <button onclick="applyCorridorToQuote()" class="mt-4 w-full py-3 px-4 rounded-xl bg-ocean-600 hover:bg-ocean-500 text-white font-semibold text-sm flex items-center justify-center gap-2 transition shadow-md">
+                            <span>Lock Corridor & Request Rate Sheet</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CORE SERVICES GRID -->
+    <section id="services" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="inline-block text-xs font-bold uppercase tracking-widest text-ocean-700 bg-ocean-500/10 px-3.5 py-1.5 rounded-full mb-3">
+                    End-to-End EXIM Architecture
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900 tracking-tight">
+                    Integrated Global Trade & Logistics Services
+                </h2>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg leading-relaxed">
+                    From factory-floor quality audits to final-mile port clearance, Pangea Venture manages every link of your international supply chain under one accountable roof.
+                </p>
+            </div>
+
+            <!-- 4 Executive Service Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+                
+                <!-- Card 1 -->
+                <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-7 border border-slate-200/90 hover:border-navy-800 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-13 h-13 w-12 h-12 rounded-xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition-colors mb-6">
+                            <i data-lucide="search-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900 group-hover:text-white transition-colors">
+                            Global Sourcing & Procurement
+                        </h3>
+                        <p class="mt-3 text-sm text-slate-600 group-hover:text-slate-300 leading-relaxed transition-colors">
+                            Direct access to audited, ISO-certified manufacturers across Asia, Europe, and the Americas with pre-shipment lab testing and factory inspections.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-5 border-t border-slate-200 group-hover:border-white/10 space-y-2 text-xs font-medium text-slate-700 group-hover:text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> Vetted OEM & Bulk Suppliers</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> SGS / Bureau Veritas Audits</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-7 border border-slate-200/90 hover:border-navy-800 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition-colors mb-6">
+                            <i data-lucide="file-badge-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900 group-hover:text-white transition-colors">
+                            Import & Export Management
+                        </h3>
+                        <p class="mt-3 text-sm text-slate-600 group-hover:text-slate-300 leading-relaxed transition-colors">
+                            Complete EXIM documentation governance, Letter of Credit (LC) structuring, Certificate of Origin issuance, and FTA duty optimization.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-5 border-t border-slate-200 group-hover:border-white/10 space-y-2 text-xs font-medium text-slate-700 group-hover:text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> LC & Trade Finance Advisory</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> Zero-Discrepancy EXIM Filings</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-7 border border-slate-200/90 hover:border-navy-800 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition-colors mb-6">
+                            <i data-lucide="ship" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900 group-hover:text-white transition-colors">
+                            Multimodal Freight & Logistics
+                        </h3>
+                        <p class="mt-3 text-sm text-slate-600 group-hover:text-slate-300 leading-relaxed transition-colors">
+                            Tier-1 carrier contracts for Sea FCL/LCL containers, time-critical Air Cargo, and cross-border rail/road haulage under FOB, CIF, or DDP terms.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-5 border-t border-slate-200 group-hover:border-white/10 space-y-2 text-xs font-medium text-slate-700 group-hover:text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> FCL, LCL & Breakbulk Charter</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> Real-Time Milestone Tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-7 border border-slate-200/90 hover:border-navy-800 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition-colors mb-6">
+                            <i data-lucide="warehouse" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900 group-hover:text-white transition-colors">
+                            Customs Clearance & Warehousing
+                        </h3>
+                        <p class="mt-3 text-sm text-slate-600 group-hover:text-slate-300 leading-relaxed transition-colors">
+                            Rapid port brokerage, HS-code tariff classification, bonded warehousing, palletization, and regional distribution hubs across key ports.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-5 border-t border-slate-200 group-hover:border-white/10 space-y-2 text-xs font-medium text-slate-700 group-hover:text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> Bonded & Cold-Chain Storage</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-ocean-600 group-hover:text-ocean-400"></i> Automated Tariff & Duty Advisory</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KEY PRODUCT CATEGORIES / SECTORS (INTERACTIVE FILTERABLE TABS) -->
+    <section id="industries" class="py-20 lg:py-28 bg-slate-100/80 border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-500/15 px-3.5 py-1.5 rounded-full mb-3">
+                        Specialized Trade Verticals
+                    </span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900 tracking-tight">
+                        Commodities & Industrial Sectors
+                    </h2>
+                    <p class="mt-3 text-slate-600 text-base sm:text-lg">
+                        Filter our active export-import portfolios engineered with full HS-code compliance and international packaging standards.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div id="sector-tabs" class="flex flex-wrap gap-2">
+                    <button data-filter="all" class="sector-tab tab-active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        All Sectors
+                    </button>
+                    <button data-filter="agro" class="sector-tab bg-white text-slate-700 hover:bg-slate-200/70 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        Agro & Spices
+                    </button>
+                    <button data-filter="textiles" class="sector-tab bg-white text-slate-700 hover:bg-slate-200/70 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        Textiles & Apparel
+                    </button>
+                    <button data-filter="machinery" class="sector-tab bg-white text-slate-700 hover:bg-slate-200/70 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        Industrial Machinery
+                    </button>
+                    <button data-filter="chemicals" class="sector-tab bg-white text-slate-700 hover:bg-slate-200/70 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        Chemicals & Minerals
+                    </button>
+                    <button data-filter="consumer" class="sector-tab bg-white text-slate-700 hover:bg-slate-200/70 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200">
+                        Consumer Goods
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sector Cards Grid -->
+            <div id="sector-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                
+                <!-- Item 1: Agro & Spices -->
+                <div data-category="agro" class="sector-card bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">Agro & Spices</span>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded">HS: 0904 – 1006</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900">Whole Spices, Basmati Rice & Oilseeds</h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            APEDA & Spices Board certified exports including turmeric, black pepper, cardamom, cumin, and parboiled grains with phytosanitary clearance.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Packaging Standard:</span>
+                            <span class="font-semibold text-navy-900">25kg/50kg PP Woven & Vacuum Bags</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Key Trade Flow:</span>
+                            <span class="font-semibold text-ocean-700">India → GCC, EU, North America</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Textiles & Apparel -->
+                <div data-category="textiles" class="sector-card bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-bold">Textiles & Apparel</span>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded">HS: 5208 – 6204</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900">Organic Cotton, Technical Fabrics & Garments</h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            GOTS & OEKO-TEX certified woven fabrics, home textiles, and private-label corporate apparel sourced from Tier-1 sustainable mills.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Packaging Standard:</span>
+                            <span class="font-semibold text-navy-900">Moisture-Barrier Bales & GOH</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Key Trade Flow:</span>
+                            <span class="font-semibold text-ocean-700">South Asia → UK, Germany, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Industrial Machinery -->
+                <div data-category="machinery" class="sector-card bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-amber-50 text-amber-700 text-xs font-bold">Industrial Machinery</span>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded">HS: 8413 – 8483</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900">Precision Engineering, Pumps & CNC Components</h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            Heavy industrial valves, hydraulic assemblies, agricultural equipment, and custom automotive castings engineered to DIN/ASTM standards.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Packaging Standard:</span>
+                            <span class="font-semibold text-navy-900">ISPM-15 Fumigated Crates + VCI</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Key Trade Flow:</span>
+                            <span class="font-semibold text-ocean-700">EU / East Asia ↔ India & Africa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Chemicals & Minerals -->
+                <div data-category="chemicals" class="sector-card bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-teal-50 text-teal-700 text-xs font-bold">Chemicals & Minerals</span>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded">HS: 2815 – 2942</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900">Specialty Chemicals, Polymers & Industrial Minerals</h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            REACH-compliant specialty intermediates, pigments, bentonite, and construction polymers complete with full MSDS and UN-certified handling.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Packaging Standard:</span>
+                            <span class="font-semibold text-navy-900">UN-Approved HDPE Drums & IBC Tanks</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Key Trade Flow:</span>
+                            <span class="font-semibold text-ocean-700">GCC & India → Global Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Consumer Goods -->
+                <div data-category="consumer" class="sector-card bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-rose-50 text-rose-700 text-xs font-bold">Consumer Goods</span>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded">HS: 3924 – 9403</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-navy-900">Eco-Packaging, Kitchenware & FMCG Retail</h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            Biodegradable tableware, stainless-steel homeware, and retail-ready FMCG goods with barcode labeling and FBA/retail distribution prep.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Packaging Standard:</span>
+                            <span class="font-semibold text-navy-900">Retail Master Cartons & Euro Pallets</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Key Trade Flow:</span>
+                            <span class="font-semibold text-ocean-700">Asia → North America, EU & ANZ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Custom Sourcing Desk Card -->
+                <div data-category="all" class="sector-card bg-navy-900 text-white rounded-2xl p-6 sm:p-7 border border-navy-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-gold-500/20 text-gold-400 text-xs font-bold">Custom Mandates</span>
+                            <i data-lucide="sparkles" class="w-5 h-5 text-gold-400"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white">Bespoke Product Sourcing & Contract Manufacturing</h3>
+                        <p class="mt-2.5 text-sm text-slate-300 leading-relaxed">
+                            Looking for a specialized HS code or private-label manufacturer? Our regional sourcing desks identify, audit, and negotiate directly on your behalf.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="#quote" class="inline-flex items-center gap-2 text-sm font-bold text-gold-400 hover:text-gold-300 transition">
+                            <span>Submit Custom Product Spec</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS (4-STEP TRADE EXECUTION TIMELINE) -->
+    <section id="process" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="inline-block text-xs font-bold uppercase tracking-widest text-ocean-700 bg-ocean-500/10 px-3.5 py-1.5 rounded-full mb-3">
+                    Predictable Execution
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900 tracking-tight">
+                    How Pangea Venture Executes Your Trade
+                </h2>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg">
+                    A transparent, four-stage operational framework designed to eliminate demurrage delays, compliance risks, and supply chain blind spots.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Horizontal Line (Desktop) -->
+                <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-navy-900 via-ocean-500 to-gold-500 opacity-25"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 01 -->
+                    <div class="relative bg-slate-50 rounded-2xl p-7 border border-slate-200/90 hover:border-ocean-500/50 transition">
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-gold-400 font-display font-extrabold text-lg flex items-center justify-center shadow-md mb-6 relative z-10">
+                            01
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-navy-900">
+                            Requirement & Feasibility Analysis
+                        </h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            We evaluate product specs, target landed cost, Incoterms (FOB/CIF/DDP), HS-code duty structures, and regulatory import permits.
+                        </p>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="relative bg-slate-50 rounded-2xl p-7 border border-slate-200/90 hover:border-ocean-500/50 transition">
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-gold-400 font-display font-extrabold text-lg flex items-center justify-center shadow-md mb-6 relative z-10">
+                            02
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-navy-900">
+                            Supplier Vetting & Contracting
+                        </h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            Shortlisting verified manufacturers or buyers, sample validation, price benchmarking, and secure LC/escrow contract execution.
+                        </p>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="relative bg-slate-50 rounded-2xl p-7 border border-slate-200/90 hover:border-ocean-500/50 transition">
+                        <div class="w-14 h-14 rounded-2xl bg-navy-900 text-gold-400 font-display font-extrabold text-lg flex items-center justify-center shadow-md mb-6 relative z-10">
+                            03
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-navy-900">
+                            Quality Control & Customs Docs
+                        </h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            On-site pre-shipment inspection, container stuffing supervision, Bill of Lading, Certificate of Origin, and export customs filing.
+                        </p>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="relative bg-slate-50 rounded-2xl p-7 border border-slate-200/90 hover:border-ocean-500/50 transition">
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500 text-navy-950 font-display font-extrabold text-lg flex items-center justify-center shadow-md mb-6 relative z-10">
+                            04
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-navy-900">
+                            Global Transit & Doorstep Delivery
+                        </h3>
+                        <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                            Live vessel/airway tracking, destination port customs clearance, duty settlement, and final-mile delivery to your warehouse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. INTERACTIVE QUOTE / TRADE INQUIRY SECTION -->
+    <section id="quote" class="py-20 lg:py-28 bg-navy-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern bg-grid-dots opacity-50 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Executive Trade Consultation Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-gold-400 bg-gold-500/15 px-3.5 py-1.5 rounded-full">
+                        Initiate Trade Mandate
+                    </span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">
+                        Request a Tailored Freight & Sourcing Proposal
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Share your commodity requirements or shipment route. Our senior EXIM desk responds within <strong class="text-white">4 business hours</strong> with landed-cost estimates, transit schedules, and compliance checklists.
+                    </p>
+
+                    <!-- Direct Contact Cards -->
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-ocean-600/20 text-ocean-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Global Trade Desk</div>
+                                <a href="mailto:info@pangeaventure.com" class="text-base font-bold text-white hover:text-gold-400 transition">info@pangeaventure.com</a>
+                                <p class="text-xs text-slate-400 mt-0.5">Direct RFQs, LC Inquiries & Supplier Onboarding</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">NDA & Commercial Confidentiality</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">100% Protected Supplier & Buyer Specs</div>
+                                <p class="text-xs text-slate-400 mt-0.5">Strict non-circumvention & data privacy standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Quote Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-9 shadow-2xl border border-slate-200">
+                        
+                        <!-- Form State -->
+                        <form id="trade-quote-form" class="space-y-5">
+                            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                                <h3 class="font-display font-bold text-xl text-navy-900">Trade & Logistics Inquiry</h3>
+                                <span class="text-xs font-semibold text-ocean-700 bg-ocean-50 px-2.5 py-1 rounded-md">No-Obligation Quote</span>
+                            </div>
+
+                            <!-- Trade Type Radio Pills -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">1. Select Trade Mandate *</label>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="tradeType" value="Export from Origin" class="peer sr-only" checked>
+                                        <div class="text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 peer-checked:bg-navy-900 peer-checked:text-white peer-checked:border-navy-900 transition">
+                                            Export
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="tradeType" value="Import to Destination" class="peer sr-only">
+                                        <div class="text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 peer-checked:bg-navy-900 peer-checked:text-white peer-checked:border-navy-900 transition">
+                                            Import
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="tradeType" value="Global Sourcing" class="peer sr-only">
+                                        <div class="text-center py-2.5 px-3 rounded-xl border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 peer-checked:bg-navy-900 peer-checked:text-white peer-checked:border-navy-900 transition">
+                                            Global Sourcing
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Category & Shipment Volume -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="form-category" class="block text-xs font-semibold text-slate-700 mb-1.5">Product / Commodity Sector *</label>
+                                    <select id="form-category" required class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                        <option value="Agro & Spices">Agro & Spices</option>
+                                        <option value="Textiles & Apparel">Textiles & Apparel</option>
+                                        <option value="Industrial Machinery">Industrial Machinery</option>
+                                        <option value="Chemicals & Minerals">Chemicals & Minerals</option>
+                                        <option value="Consumer Goods">Consumer Goods</option>
+                                        <option value="Other / Custom Commodity">Other / Custom Commodity</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="form-volume" class="block text-xs font-semibold text-slate-700 mb-1.5">Shipment Volume / Mode *</label>
+                                    <select id="form-volume" required class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                        <option value="Sea FCL (20ft / 40ft Container)">Sea FCL (20ft / 40ft Container)</option>
+                                        <option value="Sea LCL (Less than Container Load)">Sea LCL (Consolidated Pallet)</option>
+                                        <option value="Air Freight (Express / Cargo)">Air Freight (Express / Cargo)</option>
+                                        <option value="Bulk / Breakbulk Charter">Bulk / Breakbulk Charter</option>
+                                        <option value="Sample / Trial Order">Sample / Trial Order</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Origin & Destination -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="form-origin" class="block text-xs font-semibold text-slate-700 mb-1.5">Origin Country / Port *</label>
+                                    <input type="text" id="form-origin" required placeholder="e.g., Mundra / Nhava Sheva, India" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="form-destination" class="block text-xs font-semibold text-slate-700 mb-1.5">Destination Country / Port *</label>
+                                    <input type="text" id="form-destination" required placeholder="e.g., Rotterdam, NL / Jebel Ali, UAE" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Contact Details -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="form-name" class="block text-xs font-semibold text-slate-700 mb-1.5">Full Name & Title *</label>
+                                    <input type="text" id="form-name" required placeholder="e.g., Aarav Sharma, Procurement Head" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="form-company" class="block text-xs font-semibold text-slate-700 mb-1.5">Company Name *</label>
+                                    <input type="text" id="form-company" required placeholder="e.g., Meridian Global Imports Ltd." class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="form-email" class="block text-xs font-semibold text-slate-700 mb-1.5">Corporate Email *</label>
+                                    <input type="email" id="form-email" required placeholder="name@company.com" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="form-phone" class="block text-xs font-semibold text-slate-700 mb-1.5">Phone / WhatsApp (with Country Code)</label>
+                                    <input type="tel" id="form-phone" placeholder="+1 (555) 234-5678" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Project Notes -->
+                            <div>
+                                <label for="form-notes" class="block text-xs font-semibold text-slate-700 mb-1.5">Commodity Specifications, HS Code, or Target Incoterms</label>
+                                <textarea id="form-notes" rows="3" placeholder="Specify product grade, target quantity, Incoterms (FOB/CIF/DDP), or timeline..." class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm text-navy-900 focus:bg-white focus:border-navy-900 focus:outline-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold text-base py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2.5">
+                                <span>Submit Trade Inquiry</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5 text-gold-400"></i>
+                            </button>
+                        </form>
+
+                        <!-- Confirmation Feedback State (Hidden until submission) -->
+                        <div id="quote-confirmation" class="hidden py-6 text-center space-y-5">
+                            <div class="w-16 h-16 rounded-2xl bg-ocean-500/15 text-ocean-600 flex items-center justify-center mx-auto">
+                                <i data-lucide="check-circle-2" class="w-9 h-9"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-widest text-ocean-700">Dossier Registered</span>
+                                <h3 class="font-display font-extrabold text-2xl text-navy-900 mt-1">Trade Mandate Received</h3>
+                                <p class="text-sm text-slate-600 max-w-md mx-auto mt-2">
+                                    Thank you, <span id="conf-name" class="font-semibold text-navy-900">Partner</span>. Your inquiry has been assigned to a senior trade desk specialist at <span class="font-semibold">pangeaventure.com</span>.
+                                </p>
+                            </div>
+
+                            <!-- Reference ID Box -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 max-w-md mx-auto">
+                                <div class="text-xs text-slate-500 uppercase font-semibold">Official Inquiry Reference ID</div>
+                                <div class="flex items-center justify-center gap-3 mt-1">
+                                    <span id="conf-ref-id" class="font-mono font-extrabold text-xl text-navy-900 tracking-wider">PV-2026-8492</span>
+                                    <button type="button" onclick="copyReferenceId()" class="text-xs bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-2.5 py-1 rounded-lg transition">
+                                        Copy
+                                    </button>
+                                </div>
+                                <div id="conf-summary" class="text-xs text-slate-600 mt-2.5 pt-2.5 border-t border-slate-200"></div>
+                            </div>
+
+                            <button type="button" onclick="resetQuoteForm()" class="inline-flex items-center gap-2 text-sm font-semibold text-navy-900 hover:text-gold-600 transition pt-2">
+                                <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                                <span>Submit Another Trade Inquiry</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PROFESSIONAL FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 border-t border-white/10 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Column -->
+                <div class="lg:col-span-4 space-y-4">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-navy-800 border border-white/10 flex items-center justify-center">
+                            <svg class="w-6 h-6" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="14" stroke="#F59E0B" stroke-width="1.75"/>
+                                <path d="M12.5 10.5C15 9.2 19.8 9.6 22.4 11.8C24.5 13.6 24.8 16.5 22.8 18.4C21.2 19.9 22.5 22.6 20.2 24.5C18.1 26.2 14.5 25.5 13.1 23.2C11.8 21.1 13.4 19.2 11.6 17.2C9.8 15.2 10.2 11.7 12.5 10.5Z" fill="#F59E0B"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-display font-extrabold text-lg text-white tracking-tight">PANGEA <span class="text-gold-400">VENTURE</span></span>
+                            <span class="block text-[11px] font-mono text-slate-400">www.pangeaventure.com</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Connecting global markets and bridging continents through compliant international sourcing, multimodal freight logistics, and turnkey EXIM management.
+                    </p>
+                    <!-- Compliance Badges -->
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-[11px] font-semibold text-slate-300">ISO 9001:2015</span>
+                        <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-[11px] font-semibold text-slate-300">DGFT IEC Certified</span>
+                        <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-[11px] font-semibold text-slate-300">FIEO Member</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="font-display font-bold text-sm uppercase tracking-wider text-white">Navigation</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#services" class="hover:text-gold-400 transition">Core Services</a></li>
+                        <li><a href="#corridors" class="hover:text-gold-400 transition">Trade Corridors</a></li>
+                        <li><a href="#industries" class="hover:text-gold-400 transition">Sectors & HS Codes</a></li>
+                        <li><a href="#process" class="hover:text-gold-400 transition">Execution Process</a></li>
+                        <li><a href="#quote" class="hover:text-gold-400 transition">Request a Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Trade Hubs & Contact -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-display font-bold text-sm uppercase tracking-wider text-white">Global Trade Desk</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="mail" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                            <a href="mailto:info@pangeaventure.com" class="hover:text-white transition">info@pangeaventure.com</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="globe" class="w-4 h-4 text-ocean-400 shrink-0"></i>
+                            <span>www.pangeaventure.com</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 shrink-0 mt-1"></i>
+                            <span>Regional EXIM Operations: Mumbai • Dubai • Rotterdam • Singapore</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Market Intelligence Newsletter -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-display font-bold text-sm uppercase tracking-wider text-white">EXIM Market Briefings</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Receive monthly freight index updates, FTA tariff alerts, and commodity sourcing insights.
+                    </p>
+                    <form id="newsletter-form" class="space-y-2 pt-1">
+                        <input type="email" id="newsletter-email" required placeholder="Enter corporate email" class="w-full rounded-xl bg-white/5 border border-white/15 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-500">
+                        <button type="submit" class="w-full rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold text-xs uppercase tracking-wider py-2.5 transition">
+                            Subscribe to Trade Brief
+                        </button>
+                    </form>
+                    <p id="newsletter-msg" class="hidden text-xs text-ocean-400 font-medium"></p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>© 2026 Pangea Venture (pangeaventure.com). All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <span>Incoterms® 2020 Compliant</span>
+                    <span>•</span>
+                    <span>Anti-Bribery & Sanction Screened</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Banner (Non-blocking UI Feedback) -->
+    <div id="toast-banner" class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 bg-navy-900 text-white px-4 py-3 rounded-xl shadow-2xl border border-white/15 text-sm">
+        <i data-lucide="info" class="w-4 h-4 text-gold-400"></i>
+        <span id="toast-text">Notification</span>
+    </div>
+
+    <!-- Interactive Application Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 1. Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Interactive Global Trade Corridor Estimator
+        const corridorData = {
+            "India / South Asia|Europe (EU & UK)": {
+                modes: "Sea FCL/LCL • Express Air",
+                time: "16–22 Days Sea / 3 Days Air",
+                shortDays: "16–22 DAYS",
+                commodities: "Organic Spices, Technical Textiles, Engineering Components, Specialty Chemicals"
+            },
+            "India / South Asia|North America": {
+                modes: "Direct Sea FCL • Priority Air",
+                time: "24–32 Days Sea / 4 Days Air",
+                shortDays: "24–32 DAYS",
+                commodities: "Basmati Rice, Home Textiles, Precision Castings, Eco-Packaging & FMCG"
+            },
+            "India / South Asia|Middle East (GCC)": {
+                modes: "Short-Sea FCL • Next-Day Air",
+                time: "4–7 Days Sea / 24 Hrs Air",
+                shortDays: "4–7 DAYS",
+                commodities: "Fresh & Dry Agro Commodities, Construction Minerals, Industrial Valves, Apparel"
+            },
+            "India / South Asia|Southeast Asia": {
+                modes: "Feeder Sea FCL/LCL • Air Cargo",
+                time: "7–12 Days Sea / 2 Days Air",
+                shortDays: "7–12 DAYS",
+                commodities: "Organic Chemicals, Cotton Yarn, Agricultural Machinery, Processed Foods"
+            },
+            "Middle East (GCC)|Europe (EU & UK)": {
+                modes: "Suez Sea FCL • Air Freight",
+                time: "12–16 Days Sea / 2 Days Air",
+                shortDays: "12–16 DAYS",
+                commodities: "Petrochemical Polymers, Aluminum Ingots, Industrial Lubricants, Re-Export Goods"
+            },
+            "Southeast Asia|North America": {
+                modes: "Trans-Pacific FCL • Air Express",
+                time: "18–26 Days Sea / 3 Days Air",
+                shortDays: "18–26 DAYS",
+                commodities: "Consumer Goods, Packaging Solutions, Light Industrial Machinery, Natural Rubber"
+            },
+            "Europe (EU & UK)|India / South Asia": {
+                modes: "Sea FCL/LCL • Express Air",
+                time: "18–24 Days Sea / 3 Days Air",
+                shortDays: "18–24 DAYS",
+                commodities: "CNC & Automation Machinery, Specialty Industrial Chemicals, Medical & Lab Equipment"
+            },
+            "North America|India / South Asia": {
+                modes: "Sea FCL • Priority Air Cargo",
+                time: "26–34 Days Sea / 4 Days Air",
+                shortDays: "26–34 DAYS",
+                commodities: "High-Tech Components, Specialty Polymers, Industrial Hardware, Agro Pulses"
+            }
+        };
+
+        const originSelect = document.getElementById('corridor-origin');
+        const destSelect = document.getElementById('corridor-dest');
+
+        function updateCorridorEstimator() {
+            const origin = originSelect.value;
+            const dest = destSelect.value;
+            const key = `${origin}|${dest}`;
+
+            const svgOrigin = document.getElementById('svg-origin-label');
+            const svgDest = document.getElementById('svg-dest-label');
+            const svgDays = document.getElementById('svg-transit-days');
+            const modesEl = document.getElementById('corridor-modes');
+            const timeEl = document.getElementById('corridor-time');
+            const commEl = document.getElementById('corridor-commodities');
+
+            svgOrigin.textContent = origin.split(' ')[0].toUpperCase();
+            svgDest.textContent = dest.split(' ')[0].toUpperCase();
+
+            if (origin === dest) {
+                svgDays.textContent = "REGIONAL HUB";
+                modesEl.textContent = "Bonded Warehousing • Cross-Docking";
+                timeEl.textContent = "1–3 Days Domestic / Intra-Region";
+                commEl.textContent = "Regional Consolidation, Customs Bonded Storage & Quality Inspection Services";
+                return;
+            }
+
+            const info = corridorData[key] || {
+                modes: "Multimodal Sea FCL/LCL • Air Cargo",
+                time: "14–25 Days Sea / 3–4 Days Air",
+                shortDays: "14–25 DAYS",
+                commodities: "Industrial Machinery, Agro Commodities, Textiles, Specialty Chemicals & Consumer Goods"
+            };
+
+            svgDays.textContent = info.shortDays;
+            modesEl.textContent = info.modes;
+            timeEl.textContent = info.time;
+            commEl.textContent = info.commodities;
+        }
+
+        originSelect.addEventListener('change', updateCorridorEstimator);
+        destSelect.addEventListener('change', updateCorridorEstimator);
+
+        // Pre-fill Quote Form from Corridor Estimator
+        function applyCorridorToQuote() {
+            document.getElementById('form-origin').value = originSelect.value;
+            document.getElementById('form-destination').value = destSelect.value;
+            document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Route ${originSelect.value} → ${destSelect.value} applied to quote form.`);
+        }
+
+        // 3. Interactive Industry Sector Filter Tabs
+        const sectorTabs = document.querySelectorAll('.sector-tab');
+        const sectorCards = document.querySelectorAll('.sector-card');
+
+        sectorTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Reset active tab styling
+                sectorTabs.forEach(t => {
+                    t.classList.remove('tab-active');
+                    t.classList.add('bg-white', 'text-slate-700');
+                });
+                tab.classList.add('tab-active');
+                tab.classList.remove('bg-white', 'text-slate-700');
+
+                const filter = tab.getAttribute('data-filter');
+
+                sectorCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter || category === 'all') {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // 4. Interactive Quote Form Submission & Reference ID Generator
+        const quoteForm = document.getElementById('trade-quote-form');
+        const quoteConfirmation = document.getElementById('quote-confirmation');
+
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const tradeType = document.querySelector('input[name="tradeType"]:checked').value;
+            const category = document.getElementById('form-category').value;
+            const volume = document.getElementById('form-volume').value;
+            const origin = document.getElementById('form-origin').value.trim();
+            const destination = document.getElementById('form-destination').value.trim();
+            const name = document.getElementById('form-name').value.trim();
+            const company = document.getElementById('form-company').value.trim();
+
+            // Generate realistic Reference ID
+            const randomNum = Math.floor(1000 + Math.random() * 9000);
+            const refId = `PV-2026-${randomNum}`;
+
+            document.getElementById('conf-name').textContent = name;
+            document.getElementById('conf-ref-id').textContent = refId;
+            document.getElementById('conf-summary').textContent = `${tradeType} • ${category} (${volume}) | ${origin} → ${destination} (${company})`;
+
+            quoteForm.classList.add('hidden');
+            quoteConfirmation.classList.remove('hidden');
+            showToast(`Inquiry ${refId} submitted to Pangea Venture Trade Desk.`);
+        });
+
+        function resetQuoteForm() {
+            quoteForm.reset();
+            quoteConfirmation.classList.add('hidden');
+            quoteForm.classList.remove('hidden');
+        }
+
+        function copyReferenceId() {
+            const refText = document.getElementById('conf-ref-id').textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = refText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`Reference ID ${refText} copied to clipboard.`);
+        }
+
+        // 5. Newsletter Form Handler
+        const newsletterForm = document.getElementById('newsletter-form');
+        const newsletterMsg = document.getElementById('newsletter-msg');
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const emailVal = document.getElementById('newsletter-email').value;
+            newsletterMsg.textContent = `Subscribed ${emailVal} to Pangea Venture EXIM Briefings.`;
+            newsletterMsg.classList.remove('hidden');
+            newsletterForm.reset();
+        });
+
+        // Non-blocking Toast Helper
+        let toastTimeout;
+        function showToast(message) {
+            const toast = document.getElementById('toast-banner');
+            const toastText = document.getElementById('toast-text');
+            toastText.textContent = message;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
